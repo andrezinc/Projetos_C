@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 float conversor(char calculo);
-
+float conversorparadecimal(float calculo);
+int contador(char calculo);
 int main()
 {
     char a[50];
@@ -12,24 +13,27 @@ int main()
     float numeros[50];
     for (int l = 0; l < 50; l++)
     {
-        numeros[l] = conversor(a[l]); //cada numero dentro da string "a" passa pelo conversor 
+        numeros[l] = conversor(a[l]); // cada numero dentro da string "a" passa pelo conversor
     }
 
     for (int i = 0; i < 50; i++)
     {
-        printf(" %.1f ", numeros[i]); //aparece na tela
+        printf(" %.1f ", numeros[i]); // aparece na tela
     }
 }
 
+int contador(char calculo)
+{
+}
 float conversor(char calculo)
 {
     float numeros;
 
     numeros = 0;
 
-    for (int o = 48; o <= 57; o++) //dentro da função se faz a comparação 10 vezes para percorrer no espectro ASCII dos caracters
+    for (int o = 48; o <= 57; o++) // dentro da função se faz a comparação 10 vezes para percorrer no espectro ASCII dos caracters
     {
-        if (calculo == (o)) //caso o numero dentro da string for o mesmo numero ele retorna como valor float
+        if (calculo == (o)) // caso o numero dentro da string for o mesmo numero ele retorna como valor float
         {
             switch (o)
             {
@@ -66,7 +70,7 @@ float conversor(char calculo)
             default:
                 break;
             }
-            return numeros; //retorna o numero para o vetor
+            return numeros; // retorna o numero para o vetor
         }
     }
 }

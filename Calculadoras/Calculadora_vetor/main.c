@@ -12,12 +12,12 @@ int main()
     float numeros[50];
     for (int l = 0; l < 50; l++)
     {
-        numeros[l] = conversor(a[l]);
+        numeros[l] = conversor(a[l]); //cada numero dentro da string "a" passa pelo conversor 
     }
 
     for (int i = 0; i < 50; i++)
     {
-        printf(" %.1f ", numeros[i]);
+        printf(" %.1f ", numeros[i]); //aparece na tela
     }
 }
 
@@ -27,9 +27,9 @@ float conversor(char calculo)
 
     numeros = 0;
 
-    for (int o = 48; o <= 57; o++)
+    for (int o = 48; o <= 57; o++) //dentro da função se faz a comparação 10 vezes para percorrer no espectro ASCII dos caracters
     {
-        if (calculo == (o))
+        if (calculo == (o)) //caso o numero dentro da string for o mesmo numero ele retorna como valor float
         {
             switch (o)
             {
@@ -66,7 +66,7 @@ float conversor(char calculo)
             default:
                 break;
             }
-            return numeros;
+            return numeros; //retorna o numero para o vetor
         }
     }
 }

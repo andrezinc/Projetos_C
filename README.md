@@ -1,1 +1,2 @@
-<p> Alguns projetos que eu tinha em meu drive e outros por ideia de amigos para aumentar o portfólio </p>
+<p> Alguns projetos que eu tinha em meu drive e outros por ideia de amigos para aumentar o portfólio. </p>
+  Mundando o readme.

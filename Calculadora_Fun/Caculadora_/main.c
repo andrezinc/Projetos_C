@@ -13,7 +13,7 @@ int main()
     float a,b;
     char c;
     
-    printf("Faça algumas das operações entre dois numeros ( * ,/ ,- ,+ ): ");
+    printf("Fa%ca uma das opera%c%ces entre dois numeros ( * ,/ ,- ,+ ): ",135,135,208);
     scanf("%f%c%f",&a,&c,&b);
 
     
@@ -37,7 +37,7 @@ int main()
         break;
 
     default:
-        printf("Desculpe não entendi :/ ");
+        printf("Desculpe n%co entendi :/ ",198);
         break;
     }
 

@@ -79,6 +79,7 @@ float contador(char calculo){
     k++;
     if(calculo=='+'||calculo=='-'||calculo=='/'||calculo=='*'||calculo=='=')
     {
+        
         return k;
     }
 }

@@ -18,7 +18,7 @@ int main()
     for (l = 0; l < 50; l++)
     {
         numeros[l] = conversor(a[l]); // cada numero dentro da string "a" passa pelo conversor
-        operac[l]=contador(a[l]);
+        operac[l]=contador(a[l]);// cada caracter é analisado dentro da função e é mostrado a posição dos caracteres;
     }
     for (int i = 0; i < 50; i++)
     {

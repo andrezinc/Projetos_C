@@ -1,33 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 float conversor(char calculo);
-float conversorparadecimal(float calculo);
-int contador(char calculo);
+float contador(char calculo);
+int k;
+
 int main()
 {
     char a[50];
+    int numeros[50],operac[50];
+    int l;
     printf("calculo:");
     scanf("%s", &a);
 
-    float numeros[50];
-    for (int l = 0; l < 50; l++)
+   
+    for (l = 0; l < 50; l++)
     {
         numeros[l] = conversor(a[l]); // cada numero dentro da string "a" passa pelo conversor
+        operac[l]=contador(a[l]);
     }
-
     for (int i = 0; i < 50; i++)
     {
-        printf(" %.1f ", numeros[i]); // aparece na tela
+        printf("\n numero: %i operac :%i", numeros[i], operac[i]); // aparece na tela
     }
 }
 
-int contador(char calculo)
-{
-}
 float conversor(char calculo)
 {
-    float numeros;
+    int numeros;
 
     numeros = 0;
 
@@ -72,5 +73,12 @@ float conversor(char calculo)
             }
             return numeros; // retorna o numero para o vetor
         }
+    }
+}
+float contador(char calculo){
+    k++;
+    if(calculo=='+'||calculo=='-'||calculo=='/'||calculo=='*'||calculo=='=')
+    {
+        return k;
     }
 }

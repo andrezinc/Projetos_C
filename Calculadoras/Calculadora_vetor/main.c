@@ -4,31 +4,31 @@
 
 int conversor(char calculo);
 int contador(char calculo);
-int uniao(int calculo, int numero);
+int uniao(int calculo, int numero, char j);
 
-int k,kl;
-k=0;
-kl=0;
+int k, kl;
+k = 0;
+kl = 0;
 int main()
 {
     char a[50];
-    int numeros[50],operac[50],testando[50];
-    int l,bn;
+    int numeros[50], operac[50], testando[50];
+    int l, bn;
     printf("calculo:(final '=')");
     scanf("%s", &a);
     for (l = 0; l < 50; l++)
     {
         numeros[l] = conversor(a[l]); // cada numero dentro da string "a" passa pelo conversor
-        operac[l]=contador(a[l]);// cada caracter é analisado dentro da função e é mostrado a posição dos caracteres;
-        bn=operac[l];
-        testando[l]=uniao(numeros[l],bn);
+        operac[l] = contador(a[l]);   // cada caracter é analisado dentro da função e é mostrado a posição dos caracteres;
+        bn = operac[l];
+        testando[l] = uniao(numeros[l], bn, a[l]);
     }
 
     for (int i = 0; i < 50; i++)
     {
-      // printf("\n numero: %i operac :%i ", numeros[i], operac[i]); // aparece na tela
+        printf("\n\n\nuniao:%i", testando[i]);
+        // printf("\n numero: %i operac :%i ", numeros[i], operac[i]); // aparece na tela
     }
-
 }
 
 int conversor(char calculo)
@@ -76,38 +76,42 @@ int conversor(char calculo)
             }
             return numeros; // retorna o numero para o vetor
         }
-        
     }
 }
-int contador(char calculo){
+int contador(char calculo)
+{
     k++;
-    if(calculo=='+'||calculo=='-'||calculo=='/'||calculo=='*'||calculo=='=')
-    {     
+    if (calculo == '+' || calculo == '-' || calculo == '/' || calculo == '*' || calculo == '=')
+    {
         return k;
     }
-    else return 0;
+    else
+        return 0;
 }
 
-int uniao(int calculo, int numero){
-    int vetor[50],a,vetor1[50],b,c,d,e;
-    b=0;
-    d=0;
-    e=0;
-    vetor[0]=0;
-    a=numero;
+int uniao(int calculo, int numero, char j)
+{
+    int vetor[50], a, vetor1[50], b, c, d, e, f;
+    b = 0;
+    d = 0;
+    e = 0;
+    vetor[0] = 0;
+
+    a = numero;
     kl++;
-    vetor[kl]=calculo;
-    printf("entrada: %i",vetor[kl]);
-    printf(" a: %i",numero);
-    if(numero!=0){
-        for(c=(a-1);c>0;c--){
+    vetor1[kl] = a;
+    vetor[kl] = calculo;
+    if ((numero != 0 && j != '+') || (numero != 0 && j != '-') || (numero != 0 && j != '*') || (numero != 0 && j != '/'))
+    {
+        for (c = (a - 1); c > 0; c--)
+        {
             d++;
-            printf("vetordnv:%i c:%i a:%i ",vetor[d],c,(a-1));
-            e=(int)(pow(10,(c-1))+0.5);
-            printf(" e: %i ",e);
-            b=b+(vetor[d]*e);
-            printf("b: %i",b);
+            e = (int)(pow(10, (c - 1)) + 0.5);
+            b = b + (vetor[d] * e);
         }
+
+        return b;
     }
-    
+    else
+        return 0;
 }

@@ -6,8 +6,11 @@ int conversor(char calculo);
 int contador(char calculo);
 int uniao(int calculo, int numero, char j);
 
-int k, kl;
+int k, kl, km, ke,d;
+ke = 0;
+d=0;
 k = 0;
+km = 0;
 kl = 0;
 int main()
 {
@@ -91,23 +94,33 @@ int contador(char calculo)
 
 int uniao(int calculo, int numero, char j)
 {
-    int vetor[50], a, vetor1[50], b, c, d, e, f;
+    int vetor[50], a, vetor1[50], b, c, e, f;
     b = 0;
-    d = 0;
     e = 0;
     vetor[0] = 0;
-
+    vetor1[0] = 0;
     a = numero;
     kl++;
-    vetor1[kl] = a;
     vetor[kl] = calculo;
-    if ((numero != 0 && j != '+') || (numero != 0 && j != '-') || (numero != 0 && j != '*') || (numero != 0 && j != '/'))
+    if (kl != 0 && kl == a)
     {
-        for (c = (a - 1); c > 0; c--)
+        ke++;
+        vetor1[ke] = a;
+        km = +vetor1[ke] - vetor1[ke - 1];
+        printf(" km: %i a:%i numero:%i ", km, a, numero);
+        if(ke>1){
+            d++;
+        }
+    }
+    if ((numero!=0&& j!="+") || (numero!= 0&& j!="-") || (numero !=0 && j!="*") || (numero != 0 && j != "/"))
+    {
+        for (c = (km - 1); c > 0; c--)
         {
             d++;
             e = (int)(pow(10, (c - 1)) + 0.5);
             b = b + (vetor[d] * e);
+            printf("vetor[d]:%i",vetor[d]);
+            printf("b: %i ", b);
         }
 
         return b;

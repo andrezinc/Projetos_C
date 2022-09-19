@@ -5,17 +5,19 @@
 int conversor(char calculo);
 int contador(char calculo);
 int uniao(int calculo, int numero, char j);
+int operacoes(int uniao, char x, int quantidade);
 
-int k, kl, km, ke,d;
+int k, kl, km, ke, d, operadoropera;
 ke = 0;
-d=0;
+operadoropera = 0;
+d = 0;
 k = 0;
 km = 0;
 kl = 0;
 int main()
 {
     char a[50];
-    int numeros[50], operac[50], testando[50];
+    int numeros[50], operac[50], testando[50],resultado;
     int l, bn;
     printf("calculo:(final '=')");
     scanf("%s", &a);
@@ -25,12 +27,16 @@ int main()
         operac[l] = contador(a[l]);   // cada caracter é analisado dentro da função e é mostrado a posição dos caracteres;
         bn = operac[l];
         testando[l] = uniao(numeros[l], bn, a[l]);
+        
+       // 
     }
 
     for (int i = 0; i < 50; i++)
     {
-        printf("\n\n\nuniao:%i", testando[i]);
+        resultado=operacoes(testando[i],a[i],bn);
+        //printf("resultado:%i",resultado);
         // printf("\n numero: %i operac :%i ", numeros[i], operac[i]); // aparece na tela
+
     }
 }
 
@@ -107,24 +113,47 @@ int uniao(int calculo, int numero, char j)
         ke++;
         vetor1[ke] = a;
         km = +vetor1[ke] - vetor1[ke - 1];
-        printf(" km: %i a:%i numero:%i ", km, a, numero);
-        if(ke>1){
+        //printf(" km: %i a:%i numero:%i ", km, a, numero);
+        if (ke > 1)
+        {
             d++;
         }
     }
-    if ((numero!=0&& j!="+") || (numero!= 0&& j!="-") || (numero !=0 && j!="*") || (numero != 0 && j != "/"))
+    if (numero != 0)
     {
         for (c = (km - 1); c > 0; c--)
         {
             d++;
             e = (int)(pow(10, (c - 1)) + 0.5);
             b = b + (vetor[d] * e);
-            printf("vetor[d]:%i",vetor[d]);
-            printf("b: %i ", b);
+           // printf("vetor[d]:%i", vetor[d]);
+            
         }
-
+       // printf("b: %i ", b);
         return b;
     }
     else
         return 0;
+}
+int operacoes(int uniao, char x, int quantidade)
+{
+    int vetor[50],resultado;
+    //printf("entrada: %i",uniao);
+    resultado=0;
+    char a;
+    a = x;
+    if (uniao != 0)
+    {
+        operadoropera++;
+        vetor[operadoropera] = uniao;
+        //printf("in: %i ",vetor[operadoropera]);
+        if (operadoropera > 1)
+        {
+                printf("vetor-1: %i vetor1: %i  ",vetor[operadoropera-1],vetor[operadoropera]);
+                vetor[operadoropera]=vetor[operadoropera-1]+vetor[operadoropera];
+                printf("out: %i ",vetor[operadoropera]);          
+        }
+    }
+    //
+    return resultado;
 }

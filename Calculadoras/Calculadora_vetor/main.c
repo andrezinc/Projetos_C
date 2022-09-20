@@ -16,25 +16,25 @@ km = 0;
 kl = 0;
 int main()
 {
-    char a[50], *ponteiro;
-    int numeros[50], operac[50], testando[50], resultado;
+    char a[100], *ponteiro;
+    int numeros[100], operac[100], testando[100];
     int l, bn;
     printf("coloque os numeros seguidos das seguintes operacoes:(+(soma),-(subtra),*(mult),/(divisao)) coloque no final '=')");
     scanf("%s", &a);
     ponteiro = &a;
-    for (l = 0; l < 50; l++)
+    for (l = 0; l < 100; l++)
     {
         numeros[l] = conversor(a[l]); // cada numero dentro da string "a" passa pelo conversor
         operac[l] = contador(a[l]);   // cada caracter é analisado dentro da função e é mostrado a posição dos caracteres;
-        bn = operac[l];
-        testando[l] = uniao(numeros[l], bn);
+        bn = operac[l];// bn recebe operacao pra poder enviar para outra função
+        testando[l] = uniao(numeros[l], bn); // a união de numeros coloca cada numero junto a separação para saber qual é o tamanho do numero é pelo bn
 
         //
     }
 
-    for (int i = 0; i < 50; i++)
+    for (int i = 0; i < 100; i++)
     {
-        resultado = operacoes(testando[i], a[i], ponteiro, operac[i]);
+        operacoes(testando[i], a[i], ponteiro, operac[i]); // é utilizado o ponteiro para função saber qual lugar se da os caracteres de operação 
         // printf("resultado:%i",resultado);
         //  printf("\n numero: %i operac :%i ", numeros[i], operac[i]); // aparece na tela
     }
@@ -100,7 +100,7 @@ int contador(char calculo)
 
 int uniao(int calculo, int numero)
 {
-    int vetor[50], a, vetor1[50], b, c, e, f;
+    int vetor[100], a, vetor1[100], b, c, e, f;
     b = 0;
     e = 0;
     vetor[0] = 0;
@@ -119,17 +119,17 @@ int uniao(int calculo, int numero)
             d++;
         }
     }
-    if (numero != 0)
+    if (numero != 0) // se o numero for diferente de zero ele inicia a conversão que é feita da seguinte forma o tamanho do numero é dado pelo km que é o resultado do delta dos numeros
     {
         for (c = (km - 1); c > 0; c--)
         {
             d++;
-            e = (int)(pow(10, (c - 1)) + 0.5);
+            e = (int)(pow(10, (c - 1)) + 0.5); // 10 é elevado ao valor que o numero se encontra então se for 1 2 3 ele colocara 1*100+2*10+3*1 dessa forma ele produzira 123 como resultado  
             b = b + (vetor[d] * e);
             // printf("vetor[d]:%i", vetor[d]);
         }
         // printf("b: %i ", b);
-        return b;
+        return b;//retorna cada valor convertido
     }
     else
         return 0;
@@ -137,7 +137,7 @@ int uniao(int calculo, int numero)
 int operacoes(int uniao, char x, char *p, int d)
 {
 
-    int vetor[50], resultado, l[50], aux;
+    int vetor[100], resultado, l[100], aux;
     resultado = 0;
     char a;
     a = x;

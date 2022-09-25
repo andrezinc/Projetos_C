@@ -8,8 +8,8 @@ Essa calculadora é uma de N-numeros feita de maneira que converte string para i
   <h2 align="center"><b>Demais Projetos em C</h2>
   Esses outros projetos foram feitos em decorrer do curso e tem apenas a ideia de demostrar quais coisas aprendi.
   <ul>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Soma%20cruzada%20de%20vetores">Soma cruzada de vetores</li>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Reorganizador%20de%20numeros%20em%20uma%20fun%C3%A7%C3%A3o">Reorganizador de numeros em uma função</li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Soma%20cruzada%20de%20vetores">Soma cruzada de vetores<\a></li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Reorganizador%20de%20numeros%20em%20uma%20fun%C3%A7%C3%A3o">Reorganizador de numeros em uma função<\a></li>
 <li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Organizador%20de%20numeros%20em%20crescente">Organizador de numeros em crescente</a></li>
 <li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Numeros%20para%20Meses">Numeros para Meses</a></li>
 <li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Identificador%20de%20senha%20191222">Identificador de senha 191222</a></li>

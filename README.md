@@ -7,7 +7,7 @@ Essa calculadora é uma de N-numeros feita de maneira que converte string para i
     Esse foi o <a href="https://github.com/andrezinpretin/Portifolio/tree/main/TCC_IFPR%20Incubadora%20De%20Ovos"> TCC do curso de eletrônica</a> que eu fiz em 2019, foi completamente autoral e em um microcontrolador PIC.
   <h2 align="center"><b>Demais Projetos em C</h2>
   Esses outros projetos foram feitos em decorrer do curso e tem apenas a ideia de demostrar quais coisas aprendi.
-  <ol>
+  <ul>
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Soma%20cruzada%20de%20vetores">Soma cruzada de vetores</li>
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Reorganizador%20de%20numeros%20em%20uma%20fun%C3%A7%C3%A3o">Reorganizador de numeros em uma função</li>
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Organizador%20de%20numeros%20em%20crescente">Organizador de numeros em crescente</li>
@@ -17,4 +17,4 @@ Essa calculadora é uma de N-numeros feita de maneira que converte string para i
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Fun%C3%A7%C3%A3o%20e%20ponteiro%20Medias">Função e ponteiro Medias</li>
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Contador%20de%20numeros%20Pares%20e%20Impares">Contador de numeros Pares e Impares</li>
 
-</ol>
+</ul>

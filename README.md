@@ -10,11 +10,11 @@ Essa calculadora é uma de N-numeros feita de maneira que converte string para i
   <ul>
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Soma%20cruzada%20de%20vetores">Soma cruzada de vetores</li>
 <li href="https://github.com/andrezinpretin/Portifolio/tree/main/Reorganizador%20de%20numeros%20em%20uma%20fun%C3%A7%C3%A3o">Reorganizador de numeros em uma função</li>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Organizador%20de%20numeros%20em%20crescente">Organizador de numeros em crescente</li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Organizador%20de%20numeros%20em%20crescente">Organizador de numeros em crescente</a></li>
 <li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Numeros%20para%20Meses">Numeros para Meses</a></li>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Identificador%20de%20senha%20191222">Identificador de senha 191222</li>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Fun%C3%A7%C3%A3o-Organizador%20de%20notas">Função-Organizador de notas</li>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Fun%C3%A7%C3%A3o%20e%20ponteiro%20Medias">Função e ponteiro Medias</li>
-<li href="https://github.com/andrezinpretin/Portifolio/tree/main/Contador%20de%20numeros%20Pares%20e%20Impares">Contador de numeros Pares e Impares</li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Identificador%20de%20senha%20191222">Identificador de senha 191222</a></li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Fun%C3%A7%C3%A3o-Organizador%20de%20notas">Função-Organizador de notas</a></li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Fun%C3%A7%C3%A3o%20e%20ponteiro%20Medias">Função e ponteiro Medias</a></li>
+<li><a href="https://github.com/andrezinpretin/Portifolio/tree/main/Contador%20de%20numeros%20Pares%20e%20Impares">Contador de numeros Pares e Impares</a></li>
 
 </ul>
